@@ -18,19 +18,41 @@ class ConteinerDemo extends StatelessWidget {
             width: 2,
             strokeAlign: 5,
           ),
-          borderRadius: const BorderRadius.horizontal(
-            right: Radius.circular(20),
-          ),
+          // borderRadius: BorderRadius.circular(10),
           // image: const DecorationImage(
           //   image: NetworkImage(
           //       'https://m.media-amazon.com/images/I/71vRxhwDG2L._AC_SY200_.jpg'),
           // ),
-          gradient: const LinearGradient(
-              colors: [Colors.black, Colors.white12],
-              begin: Alignment.topRight,
-              end: Alignment.topLeft),
+          gradient: const RadialGradient(
+            colors: [
+              Colors.black,
+              Colors.white12,
+              Colors.brown,
+              Colors.cyanAccent,
+              Colors.amberAccent,
+              Colors.cyan,
+            ],
+
+            // begin: Alignment.topRight,
+            // end: Alignment.bottomLeft,
+          ),
+          shape: BoxShape.circle,
+          boxShadow: const [
+            BoxShadow(
+              color: Colors.red,
+              blurRadius: 10,
+              spreadRadius: 10,
+              offset: Offset(5, 10),
+            ),
+            BoxShadow(
+              color: Colors.green,
+              blurRadius: 5,
+              spreadRadius: 5,
+              offset: Offset(10, 15),
+            ),
+          ],
         ),
-        child: const Text('Yash Suvagiya'),
+        //child: const Text('Yash Suvagiya'),
       ),
     );
   }
