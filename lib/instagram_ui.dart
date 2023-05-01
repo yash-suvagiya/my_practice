@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:my_practice/circuleavatar_demo.dart';
 
-class SevenUi extends StatelessWidget {
-  const SevenUi({super.key});
+class InsatgramUi extends StatelessWidget {
+  const InsatgramUi({super.key});
 
   @override
   Widget build(BuildContext context) {

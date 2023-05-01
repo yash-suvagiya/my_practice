@@ -1,16 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:my_practice/Explanded_demo.dart';
-import 'package:my_practice/FIve_ui.dart';
-import 'package:my_practice/Seven_ui.dart';
+import 'package:my_practice/colum_demo.dart';
+import 'package:my_practice/loginpage_ui.dart';
 import 'package:my_practice/appbar_demo.dart';
 import 'package:my_practice/bottumnavigationbar_demo.dart';
 import 'package:my_practice/circuleavatar_demo.dart';
-import 'package:my_practice/first_ui.dart';
-import 'package:my_practice/fourth_ui.dart';
+import 'package:my_practice/Container_ui.dart';
+import 'package:my_practice/mix_container.dart';
+import 'package:my_practice/instagram_listtile.dart';
+import 'package:my_practice/instagram_ui.dart';
 import 'package:my_practice/liststyle_demo.dart';
-import 'package:my_practice/six_ui.dart';
+import 'package:my_practice/normalinstagram.dart';
+import 'package:my_practice/mix_container3.dart';
+import 'package:my_practice/whatsapp_container.dart';
 import 'package:my_practice/stack_Demo.dart';
 import 'package:my_practice/text_demo.dart';
+import 'package:my_practice/mix_container2.dart';
+import 'package:my_practice/whatsapp_ui.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +28,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SevenUi(),
+      home: TextDemo(),
     );
   }
 }
