@@ -19,7 +19,7 @@ class TextDemo extends StatelessWidget {
             decorationColor: Colors.green,
             decorationStyle: TextDecorationStyle.dashed,
             decorationThickness: 02,
-            fontWeight: FontWeight.bold,
+            // fontWeight: FontWeight.bold,
             overflow: TextOverflow.ellipsis,
             height: 2,
           ),

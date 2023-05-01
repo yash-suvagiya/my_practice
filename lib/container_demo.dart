@@ -18,11 +18,11 @@ class ConteinerDemo extends StatelessWidget {
             width: 2,
             strokeAlign: 5,
           ),
-          // borderRadius: BorderRadius.circular(10),
-          // image: const DecorationImage(
-          //   image: NetworkImage(
-          //       'https://m.media-amazon.com/images/I/71vRxhwDG2L._AC_SY200_.jpg'),
-          // ),
+          borderRadius: BorderRadius.circular(10),
+          image: const DecorationImage(
+            image: NetworkImage(
+                'https://m.media-amazon.com/images/I/71vRxhwDG2L._AC_SY200_.jpg'),
+          ),
           gradient: const RadialGradient(
             colors: [
               Colors.black,

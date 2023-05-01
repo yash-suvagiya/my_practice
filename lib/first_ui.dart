@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class FirstUi extends StatelessWidget {
@@ -159,8 +158,8 @@ class FirstUi extends StatelessWidget {
                       ),
                       child: const Icon(
                         Icons.search_sharp,
-                        color: Colors.black,
-                        size: 20,
+                        color: Colors.white,
+                        size: 35,
                       ),
                     ),
                     Column(
@@ -230,7 +229,11 @@ class FirstUi extends StatelessWidget {
                         color: Colors.blue.shade500,
                         borderRadius: BorderRadius.circular(100),
                       ),
-                      child: const Icon(Icons.image),
+                      child: const Icon(
+                        Icons.image,
+                        color: Colors.white,
+                        size: 35,
+                      ),
                     ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
