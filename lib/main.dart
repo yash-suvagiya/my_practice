@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_practice/Explanded_demo.dart';
+import 'package:my_practice/assetimage_demo.dart';
 import 'package:my_practice/colum_demo.dart';
 import 'package:my_practice/loginpage_ui.dart';
 import 'package:my_practice/appbar_demo.dart';
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: TextDemo(),
+      home: AssetimagedDemo(),
     );
   }
 }
