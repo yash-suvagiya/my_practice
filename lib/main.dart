@@ -13,6 +13,8 @@ import 'package:my_practice/instagram_ui.dart';
 import 'package:my_practice/liststyle_demo.dart';
 import 'package:my_practice/normalinstagram.dart';
 import 'package:my_practice/mix_container3.dart';
+import 'package:my_practice/shopping_ui.dart';
+import 'package:my_practice/singup_ui.dart';
 import 'package:my_practice/whatsapp_container.dart';
 import 'package:my_practice/stack_Demo.dart';
 import 'package:my_practice/text_demo.dart';
@@ -29,7 +31,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: AssetimagedDemo(),
+      home: ShoppingUi(),
     );
   }
 }
