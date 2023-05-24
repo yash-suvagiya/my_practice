@@ -153,7 +153,7 @@ class ShoppingUi extends StatelessWidget {
                   right: 250,
                 ),
                 child: Image.network(
-                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8qOPQFUGHoFnNTTOjrTFePaHe-H1Tglnosl720ToujJS9CRN8wt1QPfmWor7Rq-r1gNc&usqp=CAU',
+                  'assets/images/Screenshot 2023-05-18 130038.png',
                   height: 150,
                   fit: BoxFit.cover,
                   // width: 50,
@@ -247,14 +247,14 @@ class ShoppingUi extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Container(
-                    height: 100,
+                    height: 80,
                     width: 100,
                     decoration: BoxDecoration(
                       color: Colors.grey,
                       shape: BoxShape.circle,
                     ),
                     child: Image.network(
-                      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2dLVpnrbQaH1zGHhUdgGOz-CD0DrlHjdKj8j9PcRaTFsT3z9BLv3u5HEvGsF7UHW8gBU&usqp=CAU',
+                      'assets/images/Screenshot 2023-05-18 130313.png',
                     ),
                   ),
                   Container(
@@ -265,21 +265,19 @@ class ShoppingUi extends StatelessWidget {
                       shape: BoxShape.circle,
                     ),
                     child: Image.network(
-                      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4OV4gGDmB1dfR9sm-V9iZCp_7Ci-j58CIrC0a3TshLQcDBssAtxm2h5Yxb-jn-_tp7jE&usqp=CAU',
+                      'assets/images/Screenshot 2023-05-18 130038.png',
                       height: 150,
                     ),
                   ),
                   Container(
-                    height: 100,
-                    width: 100,
-                    decoration: BoxDecoration(
-                      color: Colors.grey,
-                      shape: BoxShape.circle,
-                    ),
-                    child: Image.network(
-                      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4cWa7siDGLJgMlr_knsQlykjs_T8zE9XoxKnBj_6cDCz1JOWXmJl44qJ98e_Rspigbyw&usqp=CAU',
-                    ),
-                  ),
+                      height: 100,
+                      width: 100,
+                      decoration: BoxDecoration(
+                          color: Colors.grey,
+                          shape: BoxShape.circle,
+                          image: DecorationImage(
+                              image: AssetImage(
+                                  "assets/images/Screenshot 2023-05-18 130236.png")))),
                   Icon(
                     Icons.add_circle_outline,
                     size: 90,

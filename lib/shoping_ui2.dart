@@ -10,369 +10,6 @@ class ShopingUi extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Stack(
-          //   children: [
-          //     Container(
-          //       height: 830,
-          //       width: 513,
-          //       color: Colors.orange,
-          //       child: Column(
-          //         crossAxisAlignment: CrossAxisAlignment.start,
-          //         children: [
-          //           const Icon(
-          //             Icons.arrow_back_outlined,
-          //             color: Colors.white,
-          //           ),
-          //           Padding(
-          //             padding: const EdgeInsets.only(top: 40, left: 80),
-          //             child: Row(
-          //               children: [
-          //                 Image.network(
-          //                   'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPG2Q3G2Xpy5UxnpX0HSE19Kd1eWjqcQutQg&usqp=CAU',
-          //                 ),
-          //               ],
-          //             ),
-          //           ),
-          //           const Padding(
-          //             padding: EdgeInsets.only(
-          //               left: 22,
-          //               top: 10,
-          //             ),
-          //             child: Text(
-          //               'Dried apricots',
-          //               style: TextStyle(
-          //                 color: Colors.white,
-          //                 fontSize: 25,
-          //               ),
-          //             ),
-          //           ),
-          //           Row(
-          //             children: const [
-          //               Padding(
-          //                 padding: EdgeInsets.only(
-          //                   left: 22,
-          //                   top: 10,
-          //                 ),
-          //                 child: Text(
-          //                   'artificial selaction - taste sweet',
-          //                   style: TextStyle(
-          //                     color: Colors.white,
-          //                     fontSize: 10,
-          //                   ),
-          //                 ),
-          //               ),
-          //               Padding(
-          //                 padding: EdgeInsets.only(left: 50),
-          //                 child: Icon(
-          //                   Icons.star,
-          //                   color: Colors.white,
-          //                 ),
-          //               ),
-          //               Icon(
-          //                 Icons.star,
-          //                 color: Colors.white,
-          //               ),
-          //               Icon(
-          //                 Icons.star,
-          //                 color: Colors.white,
-          //               ),
-          //               Icon(
-          //                 Icons.star,
-          //                 color: Colors.white,
-          //               ),
-          //               Icon(
-          //                 Icons.star_half,
-          //                 color: Colors.white,
-          //               ),
-          //             ],
-          //           ),
-          //           Column(
-          //             children: [
-          //               const Padding(
-          //                 padding: EdgeInsets.only(
-          //                   top: 10,
-          //                   left: 22,
-          //                 ),
-          //                 child: Text(
-          //                   'capacity',
-          //                   style: TextStyle(color: Colors.white),
-          //                 ),
-          //               ),
-          //               Stack(
-          //                 children: [
-          //                   Row(
-          //                     children: [
-          //                       Column(
-          //                         children: [
-          //                           Padding(
-          //                             padding: const EdgeInsets.only(
-          //                               top: 10,
-          //                               left: 22,
-          //                             ),
-          //                             child: Container(
-          //                               height: 50,
-          //                               width: 70,
-          //                               decoration: BoxDecoration(
-          //                                 border: Border.all(
-          //                                   color: Colors.white,
-          //                                 ),
-          //                               ),
-          //                               child: Column(
-          //                                 children: const [
-          //                                   Text(
-          //                                     'calories',
-          //                                     style: TextStyle(
-          //                                       color: Colors.white,
-          //                                     ),
-          //                                   ),
-          //                                   Text(
-          //                                     '90',
-          //                                     style: TextStyle(
-          //                                       color: Colors.white,
-          //                                     ),
-          //                                   ),
-          //                                 ],
-          //                               ),
-          //                             ),
-          //                           ),
-          //                         ],
-          //                       ),
-          //                       Padding(
-          //                         padding: const EdgeInsets.only(
-          //                           top: 10,
-          //                           left: 22,
-          //                         ),
-          //                         child: Container(
-          //                           height: 50,
-          //                           width: 70,
-          //                           decoration: BoxDecoration(
-          //                             border: Border.all(
-          //                               color: Colors.white,
-          //                             ),
-          //                           ),
-          //                           child: Column(
-          //                             children: const [
-          //                               Text(
-          //                                 'vitamin',
-          //                                 style: TextStyle(
-          //                                   color: Colors.white,
-          //                                 ),
-          //                               ),
-          //                               Text(
-          //                                 '3%',
-          //                                 style: TextStyle(
-          //                                   color: Colors.white,
-          //                                 ),
-          //                               ),
-          //                             ],
-          //                           ),
-          //                         ),
-          //                       ),
-          //                       Padding(
-          //                         padding: const EdgeInsets.only(
-          //                           top: 10,
-          //                           left: 22,
-          //                         ),
-          //                         child: Container(
-          //                           height: 50,
-          //                           width: 70,
-          //                           decoration: BoxDecoration(
-          //                             border: Border.all(
-          //                               color: Colors.white,
-          //                             ),
-          //                           ),
-          //                           child: Column(
-          //                             children: const [
-          //                               Text(
-          //                                 'advantage',
-          //                                 style: TextStyle(
-          //                                   color: Colors.white,
-          //                                 ),
-          //                               ),
-          //                               Text(
-          //                                 '8%',
-          //                                 style: TextStyle(
-          //                                   color: Colors.white,
-          //                                 ),
-          //                               ),
-          //                             ],
-          //                           ),
-          //                         ),
-          //                       ),
-          //                     ],
-          //                   ),
-          //                   Padding(
-          //                     padding: const EdgeInsets.only(
-          //                       top: 100,
-          //                     ),
-          //                     child: Container(
-          //                       height: 300,
-          //                       width: 530,
-          //                       decoration: const BoxDecoration(
-          //                         color: Colors.white,
-          //                         borderRadius: BorderRadius.only(
-          //                           topLeft: Radius.circular(50),
-          //                           topRight: Radius.circular(50),
-          //                           bottomRight: Radius.circular(50),
-          //                           bottomLeft: Radius.circular(50),
-          //                         ),
-          //                       ),
-          //                       child: Column(
-          //                         children: [
-          //                           const Padding(
-          //                             padding:
-          //                                 EdgeInsets.only(right: 370, top: 40),
-          //                             child: Text(
-          //                               'Quantity(300g)',
-          //                               style: TextStyle(
-          //                                 fontWeight: FontWeight.bold,
-          //                               ),
-          //                             ),
-          //                           ),
-          //                           Stack(
-          //                             children: [
-          //                               Row(
-          //                                 children: [
-          //                                   Padding(
-          //                                     padding: const EdgeInsets.only(
-          //                                         top: 10),
-          //                                     child: Container(
-          //                                       height: 50,
-          //                                       width: 150,
-          //                                       decoration: BoxDecoration(
-          //                                         borderRadius:
-          //                                             const BorderRadius.only(
-          //                                                 topLeft:
-          //                                                     Radius.circular(
-          //                                                         50),
-          //                                                 topRight:
-          //                                                     Radius.circular(
-          //                                                         50),
-          //                                                 bottomLeft:
-          //                                                     Radius.circular(
-          //                                                         50),
-          //                                                 bottomRight:
-          //                                                     Radius.circular(
-          //                                                         50)),
-          //                                         border: Border.all(
-          //                                             color: Colors.black),
-          //                                       ),
-          //                                     ),
-          //                                   ),
-          //                                 ],
-          //                               ),
-          //                               const Padding(
-          //                                 padding: EdgeInsets.only(
-          //                                   top: 25,
-          //                                   left: 15,
-          //                                 ),
-          //                                 child: Text(
-          //                                   '<',
-          //                                   style: TextStyle(
-          //                                     color: Colors.black,
-          //                                     fontWeight: FontWeight.bold,
-          //                                   ),
-          //                                 ),
-          //                               ),
-          //                               const Padding(
-          //                                 padding: EdgeInsets.only(
-          //                                   top: 25,
-          //                                   left: 135,
-          //                                 ),
-          //                                 child: Text(
-          //                                   '>',
-          //                                   style: TextStyle(
-          //                                     color: Colors.black,
-          //                                     fontWeight: FontWeight.bold,
-          //                                   ),
-          //                                 ),
-          //                               ),
-          //                               const Padding(
-          //                                 padding: EdgeInsets.only(
-          //                                   top: 25,
-          //                                   left: 70,
-          //                                 ),
-          //                                 child: Text(
-          //                                   '1',
-          //                                   style: TextStyle(
-          //                                     color: Colors.black,
-          //                                     fontWeight: FontWeight.bold,
-          //                                   ),
-          //                                 ),
-          //                               ),
-          //                               const Padding(
-          //                                 padding: EdgeInsets.only(
-          //                                   left: 440,
-          //                                   top: 25,
-          //                                 ),
-          //                                 child: Text(
-          //                                   '\$9.43',
-          //                                   style: TextStyle(
-          //                                     color: Colors.black,
-          //                                     fontWeight: FontWeight.bold,
-          //                                     fontSize: 20,
-          //                                   ),
-          //                                 ),
-          //                               ),
-          //                               Padding(
-          //                                 padding: const EdgeInsets.only(
-          //                                   top: 150,
-          //                                   left: 40,
-          //                                 ),
-          //                                 child: Container(
-          //                                   height: 50,
-          //                                   width: 250,
-          //                                   decoration: BoxDecoration(
-          //                                     color: Colors.orange.shade200,
-          //                                     borderRadius:
-          //                                         const BorderRadius.only(
-          //                                       bottomLeft: Radius.circular(50),
-          //                                       bottomRight:
-          //                                           Radius.circular(50),
-          //                                       topLeft: Radius.circular(50),
-          //                                       topRight: Radius.circular(50),
-          //                                     ),
-          //                                   ),
-          //                                 ),
-          //                               ),
-          //                               Padding(
-          //                                 padding: const EdgeInsets.only(
-          //                                   top: 165,
-          //                                   left: 130,
-          //                                 ),
-          //                                 child: Text(
-          //                                   'Add to cart',
-          //                                   style: TextStyle(
-          //                                     color: Colors.black,
-          //                                     fontWeight: FontWeight.bold,
-          //                                     fontSize: 15,
-          //                                   ),
-          //                                 ),
-          //                               ),
-          //                               Padding(
-          //                                 padding: const EdgeInsets.only(
-          //                                     top: 165, left: 150),
-          //                                 child: Icon(
-          //                                   Icons.favorite_rounded,
-          //                                   color: Colors.red,
-          //                                   size: 40,
-          //                                 ),
-          //                               )
-          //                             ],
-          //                           ),
-          //                         ],
-          //                       ),
-          //                     ),
-          //                   ),
-          //                 ],
-          //               ),
-          //             ],
-          //           ),
-          //         ],
-          //       ),
-          //     ),
-          //   ],
-          // ),
           const Padding(
             padding: EdgeInsets.only(
               left: 10,
@@ -384,8 +21,8 @@ class ShopingUi extends StatelessWidget {
             ),
           ),
           Align(
-            child: Image.network(
-                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPG2Q3G2Xpy5UxnpX0HSE19Kd1eWjqcQutQg&usqp=CAU'),
+            child:
+                Image.network('assets/images/Screenshot 2023-05-18 132822.png'),
           ),
           const Padding(
             padding: EdgeInsets.only(
@@ -558,43 +195,135 @@ class ShopingUi extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: Stack(
+        alignment: Alignment.topCenter,
         children: [
           Container(
-            height: 150,
-            width: 500,
+            margin: const EdgeInsets.only(top: 130),
+            height: 70,
+            alignment: Alignment.bottomCenter,
             color: Colors.black,
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 05, top: 100),
             child: Row(
-              children: const [
-                Icon(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const Icon(
                   Icons.shopping_bag_outlined,
                   color: Colors.white,
                   size: 30,
                 ),
+                const Text(
+                  'cart',
+                  style: TextStyle(
+                    fontSize: 25,
+                    color: Colors.white,
+                  ),
+                ),
+                Expanded(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Image.network(
+                        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4cWa7siDGLJgMlr_knsQlykjs_T8zE9XoxKnBj_6cDCz1JOWXmJl44qJ98e_Rspigbyw&usqp=CAU',
+                        height: 30,
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),
-          const Padding(
-            padding: EdgeInsets.only(
-              left: 50,
-              top: 100,
-            ),
-            child: Text(
-              'cart',
-              style: TextStyle(
-                fontSize: 25,
-                color: Colors.white,
+          Stack(
+            children: [
+              Container(
+                height: 150,
+                margin: const EdgeInsets.only(bottom: 30),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      'Quantity(300g)',
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          margin: const EdgeInsets.only(top: 22, left: 40),
+                          height: 50,
+                          width: 120,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(50),
+                            border: Border.all(
+                              color: Colors.black,
+                            ),
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: const [
+                              Text(
+                                '<',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                '1',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                '>',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        const Text(
+                          '\$9.43',
+                          style: TextStyle(
+                            fontSize: 18,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 30, top: 10),
+                          child: Container(
+                            height: 50,
+                            width: 200,
+                            decoration: BoxDecoration(
+                              color: Colors.orange,
+                              borderRadius:
+                                  BorderRadiusDirectional.circular(50),
+                            ),
+                            child: const Padding(
+                              padding: EdgeInsets.only(top: 18, left: 60),
+                              child: Text('Add to cart'),
+                            ),
+                          ),
+                        ),
+                        const Padding(
+                          padding: EdgeInsets.only(left: 200, top: 10),
+                          child: Icon(
+                            Icons.favorite_rounded,
+                            color: Colors.red,
+                            size: 30,
+                          ),
+                        ),
+                      ],
+                    )
+                  ],
+                ),
               ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 400, top: 100),
-            child: Image.network(
-              'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4cWa7siDGLJgMlr_knsQlykjs_T8zE9XoxKnBj_6cDCz1JOWXmJl44qJ98e_Rspigbyw&usqp=CAU',
-              height: 30,
-            ),
+            ],
           ),
         ],
       ),

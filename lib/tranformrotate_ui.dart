@@ -55,7 +55,8 @@ class TranformRotate extends StatelessWidget {
               Container(
                 height: 50,
                 width: 50,
-                color: Colors.green,
+                decoration: BoxDecoration(
+                    image: DecorationImage(image: NetworkImage(''))),
               ),
             ],
           ),
