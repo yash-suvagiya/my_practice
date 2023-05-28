@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_practice/circuleavatar_demo.dart';
+import 'package:my_practice/Demo/circuleavatar_demo.dart';
 
 class InsatgramUi extends StatelessWidget {
   const InsatgramUi({super.key});
