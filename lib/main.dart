@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_practice/Demo/batton_demo.dart';
 import 'package:my_practice/food_ui2.dart';
 import 'package:my_practice/stockmarket_ui2.dart';
 import 'package:my_practice/traveling_ui.dart';
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: StockMarket(),
+      home: MatrialbattonDemo(),
     );
   }
 }
