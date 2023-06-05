@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class GmailUi extends StatelessWidget {
   const GmailUi({super.key});
@@ -12,8 +10,8 @@ class GmailUi extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Padding(
-              padding: const EdgeInsets.only(top: 10, left: 10),
+            const Padding(
+              padding: EdgeInsets.only(top: 10, left: 10),
               child: Text(
                 'Gmail',
                 style: TextStyle(
@@ -25,7 +23,7 @@ class GmailUi extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 15, left: 10),
               child: Row(
-                children: [
+                children: const [
                   Icon(
                     Icons.photo_album,
                     color: Colors.black54,
@@ -42,7 +40,7 @@ class GmailUi extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 15, left: 10),
               child: Row(
-                children: [
+                children: const [
                   Icon(
                     Icons.phone_android,
                     color: Colors.black54,
@@ -59,7 +57,7 @@ class GmailUi extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 15, left: 10),
               child: Row(
-                children: [
+                children: const [
                   Icon(
                     Icons.trip_origin_sharp,
                     color: Colors.black54,
@@ -77,7 +75,7 @@ class GmailUi extends StatelessWidget {
         ),
       ),
       appBar: AppBar(
-        actions: [],
+        actions: const [],
       ),
     );
   }

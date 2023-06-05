@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class YoutubeUi extends StatelessWidget {
   const YoutubeUi({super.key});
@@ -9,6 +7,7 @@ class YoutubeUi extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black87,
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       body: Padding(
         padding: const EdgeInsets.only(top: 750),
         child: Center(
@@ -22,40 +21,34 @@ class YoutubeUi extends StatelessWidget {
                   color: Colors.black,
                   child: Column(
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10,
-                          left: 05,
-                        ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text(
-                              'Create',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
-                              ),
-                            ),
-                            Icon(
-                              Icons.close,
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: const [
+                          Text(
+                            'Create',
+                            style: TextStyle(
                               color: Colors.white,
-                              size: 30,
+                              fontSize: 20,
                             ),
-                          ],
-                        ),
+                          ),
+                          Icon(
+                            Icons.close,
+                            color: Colors.white,
+                            size: 30,
+                          ),
+                        ],
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 30, left: 05),
                         child: Row(
-                          children: [
+                          children: const [
                             Icon(
                               Icons.movie_creation_outlined,
                               color: Colors.white,
                               size: 30,
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(left: 20),
+                              padding: EdgeInsets.only(left: 20),
                               child: Text(
                                 'Create a Short',
                                 style: TextStyle(
@@ -70,14 +63,14 @@ class YoutubeUi extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.only(top: 30, left: 05),
                         child: Row(
-                          children: [
+                          children: const [
                             Icon(
                               Icons.upload,
                               color: Colors.white,
                               size: 30,
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(left: 20),
+                              padding: EdgeInsets.only(left: 20),
                               child: Text(
                                 'Upload a video',
                                 style: TextStyle(
@@ -92,14 +85,14 @@ class YoutubeUi extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.only(top: 30, left: 05),
                         child: Row(
-                          children: [
+                          children: const [
                             Icon(
                               Icons.ads_click_rounded,
                               color: Colors.white,
                               size: 30,
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(left: 20),
+                              padding: EdgeInsets.only(left: 20),
                               child: Text(
                                 'Go live',
                                 style: TextStyle(
@@ -117,10 +110,10 @@ class YoutubeUi extends StatelessWidget {
               );
               print('youtube showmodal');
             },
-            child: Icon(
+            child: const Icon(
               Icons.add_circle_outline,
               color: Colors.white,
-              size: 50,
+              size: 40,
             ),
           ),
         ),
