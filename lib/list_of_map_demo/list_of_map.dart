@@ -33,14 +33,15 @@ class Listofmap extends StatelessWidget {
         children: List.generate(
           whasapp.length,
           (index) => ListTile(
-              title: Text(whasapp[index]['name']),
-              subtitle: Text(whasapp[index]['message']),
-              trailing: Text(whasapp[index]['time'].toString()),
-              leading: CircleAvatar(
-                backgroundImage: NetworkImage(
-                  whasapp[index]['lead'],
-                ),
-              )),
+            title: Text(whasapp[index]['name']),
+            subtitle: Text(whasapp[index]['message']),
+            trailing: Text(whasapp[index]['time'].toString()),
+            leading: CircleAvatar(
+              backgroundImage: NetworkImage(
+                whasapp[index]['lead'],
+              ),
+            ),
+          ),
         ),
       ),
     );
