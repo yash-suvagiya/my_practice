@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:my_practice/Demo/batton_demo.dart';
 import 'package:my_practice/food_ui2.dart';
 import 'package:my_practice/gmail_ui.dart';
+import 'package:my_practice/list_of_map_demo/list_of%20_name.dart';
 import 'package:my_practice/list_of_map_demo/insta_ui.dart';
 import 'package:my_practice/list_of_map_demo/list_genrete_demo.dart';
+import 'package:my_practice/list_of_map_demo/user_model.dart';
 import 'package:my_practice/list_of_map_demo/whatsapp_ui.dart';
 import 'package:my_practice/list_of_map_demo/map_demo.dart';
 import 'package:my_practice/list_of_map_demo/whatsapp_satus_ui.dart';
@@ -12,6 +14,7 @@ import 'package:my_practice/stockmarket_ui2.dart';
 import 'package:my_practice/traveling_ui.dart';
 import 'package:my_practice/traveling_ui2.dart';
 
+import 'list_of_map_demo/model_screen_demo.dart';
 import 'youtube_ui.dart';
 
 void main() {
@@ -24,7 +27,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: InstaUi(),
+      home: ModelScreenDemo(),
     );
   }
 }
