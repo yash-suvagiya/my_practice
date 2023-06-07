@@ -5,6 +5,7 @@ import 'package:my_practice/gmail_ui.dart';
 import 'package:my_practice/list_of_map_demo/list_of%20_name.dart';
 import 'package:my_practice/list_of_map_demo/insta_ui.dart';
 import 'package:my_practice/list_of_map_demo/list_genrete_demo.dart';
+import 'package:my_practice/list_of_map_demo/model_screen.dart/insta_model_ui.dart';
 import 'package:my_practice/list_of_map_demo/model_screen.dart/whats_status_model.dart';
 import 'package:my_practice/list_of_map_demo/model_screen.dart/whatsapp_model.dart';
 import 'package:my_practice/list_of_map_demo/user_model.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: WhatsAppStatus(),
+      home: InstaModel(),
     );
   }
 }
