@@ -1,24 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_practice/Demo/batton_demo.dart';
-import 'package:my_practice/food_ui2.dart';
-import 'package:my_practice/gmail_ui.dart';
-import 'package:my_practice/list_of_map_demo/list_of%20_name.dart';
-import 'package:my_practice/list_of_map_demo/insta_ui.dart';
-import 'package:my_practice/list_of_map_demo/list_genrete_demo.dart';
-import 'package:my_practice/list_of_map_demo/model_screen.dart/insta_model_ui.dart';
-import 'package:my_practice/list_of_map_demo/model_screen.dart/whats_status_model.dart';
-import 'package:my_practice/list_of_map_demo/model_screen.dart/whatsapp_model.dart';
-import 'package:my_practice/list_of_map_demo/user_model.dart';
-import 'package:my_practice/list_of_map_demo/whatsapp_ui.dart';
-import 'package:my_practice/list_of_map_demo/map_demo.dart';
-import 'package:my_practice/list_of_map_demo/whatsapp_satus_ui.dart';
-import 'package:my_practice/list_of_map_demo/list_of_map.dart';
-import 'package:my_practice/stockmarket_ui2.dart';
-import 'package:my_practice/traveling_ui.dart';
-import 'package:my_practice/traveling_ui2.dart';
-
-import 'list_of_map_demo/model_screen_demo.dart';
-import 'youtube_ui.dart';
+import 'package:my_practice/list_of_map_demo/model_screen.dart/youtube_model_ui.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,9 +9,9 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: InstaModel(),
+      home: YoutubeModel(),
     );
   }
 }
