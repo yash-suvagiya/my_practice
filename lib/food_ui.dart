@@ -529,7 +529,7 @@ class FoodUi extends StatelessWidget {
           Stack(
             children: [
               Container(
-                margin: EdgeInsets.only(top: 50, right: 90, bottom: 50),
+                margin: const EdgeInsets.only(top: 50, right: 90, bottom: 50),
                 height: 100,
                 width: 400,
                 decoration: BoxDecoration(
@@ -563,7 +563,7 @@ class FoodUi extends StatelessWidget {
                   ],
                 ),
               ),
-              Positioned(
+              const Positioned(
                 left: 300,
                 top: 40,
                 child: CircleAvatar(
@@ -586,7 +586,7 @@ class FoodUi extends StatelessWidget {
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
+          children: const [
             Icon(
               Icons.home_outlined,
               color: Colors.white,

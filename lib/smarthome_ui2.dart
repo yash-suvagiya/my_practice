@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class SmarthomeSecond extends StatelessWidget {
   const SmarthomeSecond({super.key});
@@ -322,7 +320,7 @@ class SmarthomeSecond extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(
+                margin: const EdgeInsets.only(
                   left: 350,
                   top: 10,
                 ),

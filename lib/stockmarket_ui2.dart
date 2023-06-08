@@ -18,7 +18,7 @@ class StockMarket extends StatelessWidget {
                   color: Colors.black,
                 ),
                 Container(
-                  margin: EdgeInsets.only(top: 10),
+                  margin: const EdgeInsets.only(top: 10),
                   height: 50,
                   width: 50,
                   decoration: const BoxDecoration(
@@ -35,8 +35,8 @@ class StockMarket extends StatelessWidget {
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                const Text(
+              children: const [
+                Text(
                   'Ghulam ',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
@@ -48,7 +48,7 @@ class StockMarket extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
+                const Text(
                   'Welcome Back!',
                   style: TextStyle(
                     color: Colors.grey,

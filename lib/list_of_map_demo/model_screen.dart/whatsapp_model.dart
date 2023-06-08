@@ -46,7 +46,7 @@ class WhatsappModel extends StatelessWidget {
             (index) => ListTile(
               title: Text(
                 whatsappData[index].name!,
-                style: TextStyle(fontWeight: FontWeight.bold),
+                style: const TextStyle(fontWeight: FontWeight.bold),
               ),
               subtitle: Text(whatsappData[index].message!),
               trailing: Text(whatsappData[index].time!),

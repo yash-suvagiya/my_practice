@@ -104,7 +104,7 @@ class SixUi extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Container(
+                    SizedBox(
                       height: 50,
                       width: 150,
                       child: Image.network(

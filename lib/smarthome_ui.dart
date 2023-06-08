@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class SmartHome extends StatelessWidget {
   const SmartHome({super.key});
@@ -368,11 +366,11 @@ class SmartHome extends StatelessWidget {
                               color: Colors.white,
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(
+                          const Padding(
+                            padding: EdgeInsets.only(
                               top: 20,
                             ),
-                            child: const Icon(
+                            child: Icon(
                               Icons.pause_presentation_sharp,
                               color: Colors.amber,
                             ),

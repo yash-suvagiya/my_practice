@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class RowDemo extends StatelessWidget {
@@ -10,7 +9,7 @@ class RowDemo extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisSize: MainAxisSize.max,
-        children: [
+        children: const [
           Text('yash'),
           Text('suvagiya'),
           Text('j'),

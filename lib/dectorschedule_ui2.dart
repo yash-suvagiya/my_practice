@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class DoctorscheduleSecond extends StatelessWidget {
   const DoctorscheduleSecond({super.key});
@@ -77,7 +75,7 @@ class DoctorscheduleSecond extends StatelessWidget {
                       Column(
                         children: [
                           Container(
-                            margin: EdgeInsets.only(
+                            margin: const EdgeInsets.only(
                               top: 280,
                               left: 20,
                             ),
@@ -92,7 +90,7 @@ class DoctorscheduleSecond extends StatelessWidget {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
-                                Text(
+                                const Text(
                                   'Mon',
                                   style: TextStyle(
                                     color: Colors.grey,
@@ -112,7 +110,7 @@ class DoctorscheduleSecond extends StatelessWidget {
                       Column(
                         children: [
                           Container(
-                            margin: EdgeInsets.only(
+                            margin: const EdgeInsets.only(
                               top: 280,
                               left: 20,
                             ),
@@ -124,7 +122,7 @@ class DoctorscheduleSecond extends StatelessWidget {
                             ),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: [
+                              children: const [
                                 Text(
                                   'Tue',
                                   style: TextStyle(
@@ -145,7 +143,7 @@ class DoctorscheduleSecond extends StatelessWidget {
                       Column(
                         children: [
                           Container(
-                            margin: EdgeInsets.only(
+                            margin: const EdgeInsets.only(
                               top: 280,
                               left: 20,
                             ),
@@ -160,7 +158,7 @@ class DoctorscheduleSecond extends StatelessWidget {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
-                                Text(
+                                const Text(
                                   'Wen',
                                   style: TextStyle(
                                     color: Colors.grey,
@@ -180,7 +178,7 @@ class DoctorscheduleSecond extends StatelessWidget {
                       Column(
                         children: [
                           Container(
-                            margin: EdgeInsets.only(
+                            margin: const EdgeInsets.only(
                               top: 280,
                               left: 20,
                             ),
@@ -195,7 +193,7 @@ class DoctorscheduleSecond extends StatelessWidget {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
-                                Text(
+                                const Text(
                                   'Thu',
                                   style: TextStyle(
                                     color: Colors.grey,
@@ -215,7 +213,7 @@ class DoctorscheduleSecond extends StatelessWidget {
                       Column(
                         children: [
                           Container(
-                            margin: EdgeInsets.only(
+                            margin: const EdgeInsets.only(
                               top: 280,
                               left: 20,
                             ),
@@ -230,7 +228,7 @@ class DoctorscheduleSecond extends StatelessWidget {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
-                                Text(
+                                const Text(
                                   'Fri',
                                   style: TextStyle(
                                     color: Colors.grey,
@@ -250,7 +248,7 @@ class DoctorscheduleSecond extends StatelessWidget {
                       Column(
                         children: [
                           Container(
-                            margin: EdgeInsets.only(
+                            margin: const EdgeInsets.only(
                               top: 280,
                               left: 20,
                             ),
@@ -265,7 +263,7 @@ class DoctorscheduleSecond extends StatelessWidget {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
-                                Text(
+                                const Text(
                                   'Sat',
                                   style: TextStyle(
                                     color: Colors.grey,
@@ -285,7 +283,7 @@ class DoctorscheduleSecond extends StatelessWidget {
                       Column(
                         children: [
                           Container(
-                            margin: EdgeInsets.only(
+                            margin: const EdgeInsets.only(
                               top: 280,
                               left: 20,
                             ),
@@ -300,7 +298,7 @@ class DoctorscheduleSecond extends StatelessWidget {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
-                                Text(
+                                const Text(
                                   'Sun',
                                   style: TextStyle(
                                     color: Colors.grey,
@@ -386,7 +384,7 @@ class DoctorscheduleSecond extends StatelessWidget {
                     ],
                   ),
                   Container(
-                    margin: EdgeInsets.only(
+                    margin: const EdgeInsets.only(
                       top: 40,
                     ),
                     height: 120,
@@ -404,7 +402,7 @@ class DoctorscheduleSecond extends StatelessWidget {
                           ),
                           child: Row(
                             children: [
-                              CircleAvatar(
+                              const CircleAvatar(
                                 radius: 30,
                                 backgroundImage: NetworkImage(
                                   'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCg3ECfhNnwn30E2r5J-Sb2UphwWfflyqgeA&usqp=CAU',
@@ -436,7 +434,7 @@ class DoctorscheduleSecond extends StatelessWidget {
                                   Padding(
                                     padding: const EdgeInsets.only(right: 45),
                                     child: Row(
-                                      children: [
+                                      children: const [
                                         Icon(
                                           Icons.star,
                                           color: Colors.yellow,
@@ -462,8 +460,8 @@ class DoctorscheduleSecond extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                              Padding(
-                                padding: const EdgeInsets.only(left: 150),
+                              const Padding(
+                                padding: EdgeInsets.only(left: 150),
                                 child: Icon(
                                   Icons.favorite_border_sharp,
                                   size: 40,
@@ -476,7 +474,7 @@ class DoctorscheduleSecond extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(
+                    margin: const EdgeInsets.only(
                       top: 10,
                     ),
                     height: 120,
@@ -494,7 +492,7 @@ class DoctorscheduleSecond extends StatelessWidget {
                           ),
                           child: Row(
                             children: [
-                              CircleAvatar(
+                              const CircleAvatar(
                                 radius: 30,
                                 backgroundImage: NetworkImage(
                                   'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1HDfn6G4-nqhbWN15SyvvqbWO64R2z1lziw&usqp=CAU',
@@ -526,7 +524,7 @@ class DoctorscheduleSecond extends StatelessWidget {
                                   Padding(
                                     padding: const EdgeInsets.only(right: 45),
                                     child: Row(
-                                      children: [
+                                      children: const [
                                         Icon(
                                           Icons.star,
                                           color: Colors.yellow,
@@ -552,8 +550,8 @@ class DoctorscheduleSecond extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                              Padding(
-                                padding: const EdgeInsets.only(left: 150),
+                              const Padding(
+                                padding: EdgeInsets.only(left: 150),
                                 child: Icon(
                                   Icons.favorite_border_sharp,
                                   size: 40,
@@ -572,11 +570,11 @@ class DoctorscheduleSecond extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Icon(
+                    const Icon(
                       Icons.home_outlined,
                       size: 35,
                     ),
-                    Icon(
+                    const Icon(
                       Icons.monitor_heart_outlined,
                       size: 35,
                     ),
@@ -585,11 +583,11 @@ class DoctorscheduleSecond extends StatelessWidget {
                       color: Colors.purple.shade900,
                       size: 35,
                     ),
-                    Icon(
+                    const Icon(
                       Icons.favorite_border,
                       size: 35,
                     ),
-                    Icon(
+                    const Icon(
                       Icons.perm_identity_sharp,
                       size: 35,
                     )

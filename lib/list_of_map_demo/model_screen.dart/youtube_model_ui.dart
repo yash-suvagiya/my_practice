@@ -33,7 +33,7 @@ class YoutubeModel extends StatelessWidget {
           )
         ],
       ),
-      bottomNavigationBar: Container(
+      bottomNavigationBar: SizedBox(
         height: 40,
         width: double.infinity,
         child: Row(

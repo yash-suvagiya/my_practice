@@ -236,7 +236,7 @@ class MatrialbattonDemo extends StatelessWidget {
 
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
-                  content: Icon(
+                  content: const Icon(
                     Icons.access_time_filled_outlined,
                     color: Colors.black,
                   ),
@@ -249,7 +249,7 @@ class MatrialbattonDemo extends StatelessWidget {
                 ),
               );
             },
-            child: Text('button'),
+            child: const Text('button'),
           ),
         ],
       ),

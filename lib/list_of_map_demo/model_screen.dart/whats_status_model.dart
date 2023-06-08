@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:my_practice/list_of_map_demo/model_screen.dart/whatsapp_name_status_ui.dart';
 import 'package:my_practice/list_of_map_demo/model_screen.dart/whatsapp_staus_user_model.dart';
-import 'package:my_practice/list_of_map_demo/model_screen.dart/whatsapp_user_model.dart';
 
 class WhatsAppStatus extends StatelessWidget {
   const WhatsAppStatus({super.key});
@@ -53,7 +50,7 @@ class WhatsAppStatus extends StatelessWidget {
             (index) => ListTile(
                 title: Text(
                   whatsappStatus[index].name!,
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                  style: const TextStyle(fontWeight: FontWeight.bold),
                 ),
                 subtitle: Text(whatsappStatus[index].time!),
                 leading: CircleAvatar(

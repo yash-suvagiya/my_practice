@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 class SingupUp extends StatelessWidget {
@@ -206,7 +204,7 @@ class SingupUp extends StatelessWidget {
                         blurRadius: 5,
                         color: Colors.grey.shade300,
                         spreadRadius: 05,
-                        offset: Offset(04, 04),
+                        offset: const Offset(04, 04),
                       ),
                     ],
                   ),
@@ -257,7 +255,7 @@ class SingupUp extends StatelessWidget {
                           blurRadius: 5,
                           color: Colors.grey.shade300,
                           spreadRadius: 05,
-                          offset: Offset(04, 04),
+                          offset: const Offset(04, 04),
                         ),
                       ],
                     ),

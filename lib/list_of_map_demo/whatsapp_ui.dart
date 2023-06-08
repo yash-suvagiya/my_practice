@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class WhatsappUi extends StatelessWidget {
   WhatsappUi({super.key});
-  List<Map> mydetail = [
+  final List<Map> mydetail = [
     {
       'name': 'yash',
       'age': '20',

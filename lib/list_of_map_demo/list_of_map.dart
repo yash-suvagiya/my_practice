@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class Listofmap extends StatelessWidget {
   Listofmap({super.key});
-  List<Map> whasapp = [
+  final List<Map> whasapp = [
     {
       'name': 'yash',
       'message': 'hello',

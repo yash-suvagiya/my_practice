@@ -95,7 +95,7 @@ class FiveUi extends StatelessWidget {
                 ),
               ),
               alignment: Alignment.centerLeft,
-              child: Text('yash suvagiya'),
+              child: const Text('yash suvagiya'),
             ),
           ),
           Column(
@@ -153,7 +153,7 @@ class FiveUi extends StatelessWidget {
                 ),
               ),
               alignment: Alignment.centerLeft,
-              child: Text('********'),
+              child: const Text('********'),
             ),
           ),
           Padding(

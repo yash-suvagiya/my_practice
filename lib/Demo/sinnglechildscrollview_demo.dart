@@ -10,7 +10,7 @@ class SingleChild extends StatelessWidget {
         child: Column(
           children: List.generate(
             15,
-            (index) => ListTile(
+            (index) => const ListTile(
               leading: Icon(Icons.abc_sharp),
               title: Text('yash'),
               subtitle: Text('suvagiya'),

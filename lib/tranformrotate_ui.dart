@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class TranformRotate extends StatelessWidget {
   const TranformRotate({super.key});
@@ -22,7 +20,7 @@ class TranformRotate extends StatelessWidget {
                     height: 150,
                     width: 150,
                     color: Colors.orange,
-                    child: RotatedBox(
+                    child: const RotatedBox(
                       quarterTurns: 7,
                       child: Text(
                         'yash',
@@ -55,7 +53,7 @@ class TranformRotate extends StatelessWidget {
               Container(
                 height: 50,
                 width: 50,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     image: DecorationImage(image: NetworkImage(''))),
               ),
             ],

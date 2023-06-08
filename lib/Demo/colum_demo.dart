@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ColoumDemo extends StatelessWidget {
@@ -10,7 +9,7 @@ class ColoumDemo extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisSize: MainAxisSize.min,
-        children: [
+        children: const [
           Text('yash'),
           Text('suvagiya'),
           Text('jaysukhbhai'),

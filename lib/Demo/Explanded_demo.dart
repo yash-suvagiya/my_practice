@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class ExplandedDemo extends StatelessWidget {
   const ExplandedDemo({super.key});
@@ -18,7 +16,7 @@ class ExplandedDemo extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisSize: MainAxisSize.min,
-              children: [
+              children: const [
                 Text('yash'),
                 Text('hello'),
               ],

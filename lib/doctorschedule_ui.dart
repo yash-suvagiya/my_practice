@@ -82,7 +82,7 @@ class DoctorSchedule extends StatelessWidget {
               ),
               Container(
                 alignment: Alignment.center,
-                margin: EdgeInsets.only(
+                margin: const EdgeInsets.only(
                   top: 650,
                   left: 100,
                 ),
@@ -92,7 +92,7 @@ class DoctorSchedule extends StatelessWidget {
                   color: Colors.purple.shade900,
                   borderRadius: BorderRadius.circular(30),
                 ),
-                child: Text(
+                child: const Text(
                   'Get Started',
                   style: TextStyle(
                     color: Colors.white,

@@ -249,7 +249,7 @@ class ShoppingUi extends StatelessWidget {
                   Container(
                     height: 80,
                     width: 100,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.grey,
                       shape: BoxShape.circle,
                     ),
@@ -260,7 +260,7 @@ class ShoppingUi extends StatelessWidget {
                   Container(
                     height: 100,
                     width: 100,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.green,
                       shape: BoxShape.circle,
                     ),
@@ -272,13 +272,13 @@ class ShoppingUi extends StatelessWidget {
                   Container(
                       height: 100,
                       width: 100,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                           color: Colors.grey,
                           shape: BoxShape.circle,
                           image: DecorationImage(
                               image: AssetImage(
                                   "assets/images/Screenshot 2023-05-18 130236.png")))),
-                  Icon(
+                  const Icon(
                     Icons.add_circle_outline,
                     size: 90,
                     color: Colors.grey,
