@@ -1,4 +1,4 @@
-import 'package:my_practice/list_of_map_demo/model_screen.dart/youtube_user_ui.dart';
+import 'package:my_practice/model_ui/youtube_user_ui.dart';
 
 List<Map<String, dynamic>> youtube = [
   {

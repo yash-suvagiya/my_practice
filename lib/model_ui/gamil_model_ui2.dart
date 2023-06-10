@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:my_practice/list_of_map_demo/model_screen.dart/gamil_model_ui.dart';
-import 'package:my_practice/list_of_map_demo/model_screen.dart/gmail_name_ui2.dart';
-import 'package:my_practice/list_of_map_demo/model_screen.dart/gmail_user_ui2.dart';
+import 'package:my_practice/model_ui/gamil_model_ui.dart';
+import 'package:my_practice/model_ui/gmail_name_ui2.dart';
+import 'package:my_practice/model_ui/gmail_user_ui2.dart';
 
 class GmailModelTwo extends StatelessWidget {
   const GmailModelTwo({super.key});
@@ -15,14 +15,16 @@ class GmailModelTwo extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
-        leading: Builder(builder: (context) {
-          return IconButton(
-            onPressed: () {
-              Scaffold.of(context).openDrawer();
-            },
-            icon: const Icon(Icons.menu),
-          );
-        }),
+        leading: Builder(
+          builder: (context) {
+            return IconButton(
+              onPressed: () {
+                Scaffold.of(context).openDrawer();
+              },
+              icon: const Icon(Icons.menu),
+            );
+          },
+        ),
         title: const Text(
           'search in emails',
           style: TextStyle(
@@ -52,9 +54,7 @@ class GmailModelTwo extends StatelessWidget {
           ),
         ),
       ),
-      drawer: const Drawer(
-        child: GmailDrawer(),
-      ),
+      drawer: const GmailDrawer(),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -66,20 +66,18 @@ class GmailModelTwo extends StatelessWidget {
                 style: TextStyle(color: Colors.black87),
               ),
             ),
-            Column(
-              children: List.generate(
-                gmailData.length,
-                (index) => ListTile(
-                  title: Text(
-                    gmailData[index].name!,
-                    style: const TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                  subtitle: Text(gmailData[index].message!),
-                  trailing: Text(gmailData[index].time!),
-                  leading: CircleAvatar(
-                    // backgroundColor: Colors.blue,3
-                    child: Text(gmailData[index].lead!),
-                  ),
+            ...List.generate(
+              gmailData.length,
+              (index) => ListTile(
+                title: Text(
+                  gmailData[index].name!,
+                  style: const TextStyle(fontWeight: FontWeight.bold),
+                ),
+                subtitle: Text(gmailData[index].message!),
+                trailing: Text(gmailData[index].time!),
+                leading: CircleAvatar(
+                  // backgroundColor: Colors.blue,3
+                  child: Text(gmailData[index].lead!),
                 ),
               ),
             ),

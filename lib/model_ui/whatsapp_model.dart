@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_practice/list_of_map_demo/model_screen.dart/whatsapp_name_ui.dart';
-import 'package:my_practice/list_of_map_demo/model_screen.dart/whatsapp_user_model.dart';
+import 'package:my_practice/model_ui/whatsapp_name_ui.dart';
+import 'package:my_practice/model_ui/whatsapp_user_model.dart';
 
 class WhatsappModel extends StatelessWidget {
   const WhatsappModel({super.key});

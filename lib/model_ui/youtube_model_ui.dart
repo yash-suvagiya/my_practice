@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_practice/list_of_map_demo/model_screen.dart/youtube_name_ui.dart';
-import 'package:my_practice/list_of_map_demo/model_screen.dart/youtube_user_ui.dart';
+import 'package:my_practice/model_ui/youtube_name_ui.dart';
+import 'package:my_practice/model_ui/youtube_user_ui.dart';
 
 class YoutubeModel extends StatelessWidget {
   const YoutubeModel({super.key});
@@ -34,7 +34,7 @@ class YoutubeModel extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: SizedBox(
-        height: 40,
+        height: 50,
         width: double.infinity,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -178,7 +178,8 @@ class YoutubeModel extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(left: 10, top: 15),
+                      padding:
+                          const EdgeInsets.only(left: 10, top: 15, bottom: 10),
                       child: CircleAvatar(
                         backgroundImage: NetworkImage(
                           youtubeData[index].cir!,

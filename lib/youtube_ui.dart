@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class YoutubeUi extends StatelessWidget {
@@ -105,7 +106,9 @@ class YoutubeUi extends StatelessWidget {
               ),
             ),
           );
-          print('youtube showmodal');
+          if (kDebugMode) {
+            print('youtube showmodal');
+          }
         },
         child: const Icon(
           Icons.add_circle_outline,

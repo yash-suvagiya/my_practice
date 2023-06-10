@@ -1,4 +1,4 @@
-import 'package:my_practice/list_of_map_demo/model_screen.dart/insta_user_ui.dart';
+import 'package:my_practice/model_ui/insta_user_ui.dart';
 
 List<Map<String, dynamic>> data = [
   {

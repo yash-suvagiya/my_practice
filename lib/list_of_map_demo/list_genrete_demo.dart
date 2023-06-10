@@ -14,8 +14,11 @@ class Listgenretdemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-          children: List.generate(
-              myFriends.length, (index) => Text(myFriends[index]))),
+        children: List.generate(
+          myFriends.length,
+          (index) => Text(myFriends[index]),
+        ),
+      ),
     );
   }
 }

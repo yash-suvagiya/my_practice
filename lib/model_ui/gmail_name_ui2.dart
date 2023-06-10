@@ -1,4 +1,4 @@
-import 'package:my_practice/list_of_map_demo/model_screen.dart/gmail_user_ui2.dart';
+import 'package:my_practice/model_ui/gmail_user_ui2.dart';
 
 List<Map<String, dynamic>> gmaildata = [
   {
@@ -6,6 +6,30 @@ List<Map<String, dynamic>> gmaildata = [
     'message': 'recovey email verified\n for your google...',
     'time': '1 jun',
     'lead': 'G',
+  },
+  {
+    'name': 'google 2',
+    'message': 'security alert\nrecovery email was changed..',
+    'time': '1 jun',
+    'lead': 'G',
+  },
+  {
+    'name': 'the google account team',
+    'message': 'yash,finish setting up your...',
+    'time': '1 may',
+    'lead': 'T',
+  },
+  {
+    'name': 'google 2',
+    'message': 'security alert\nrecovery email was changed..',
+    'time': '1 jun',
+    'lead': 'G',
+  },
+  {
+    'name': 'the google account team',
+    'message': 'yash,finish setting up your...',
+    'time': '1 may',
+    'lead': 'T',
   },
   {
     'name': 'google 2',

@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:my_practice/list_of_map_demo/model_screen.dart/gmail_user_ui.dart';
 
-List<Map<String, dynamic>> gmailRowData = [
-  {
-    "icon": Icons.photo_library_outlined,
-    'name': 'All indexes',
-  },
+List<Map<String, dynamic>> gridData = [
+  {"icon": Icons.photo_library_outlined, 'name': 'yash'},
   {
     "icon": Icons.photo_camera_front_sharp,
-    'name': 'primary',
+    'name': 'harsh',
   },
   {
     "icon": Icons.sell_rounded,
@@ -29,6 +25,7 @@ List<Map<String, dynamic>> gmailRowData = [
   {
     "icon": Icons.shield_outlined,
     'name': 'import',
+    'time': '',
   },
   {
     "icon": Icons.send,
@@ -51,4 +48,3 @@ List<Map<String, dynamic>> gmailRowData = [
     'name': 'All mail',
   },
 ];
-List<GmailUser> gmailData = [];
