@@ -11,11 +11,10 @@ class GridViewExtendDemo extends StatelessWidget {
         children: [
           Expanded(
             child: GridView.extent(
-              maxCrossAxisExtent: 200,
-              mainAxisSpacing: 10,
-              crossAxisSpacing: 10,
-              children: [
-                ...List.generate(
+                maxCrossAxisExtent: 200,
+                mainAxisSpacing: 10,
+                crossAxisSpacing: 10,
+                children: List.generate(
                   gridData.length,
                   (index) => Container(
                     color: Colors.pink,
@@ -27,9 +26,7 @@ class GridViewExtendDemo extends StatelessWidget {
                       ],
                     ),
                   ),
-                )
-              ],
-            ),
+                )),
           ),
         ],
       ),

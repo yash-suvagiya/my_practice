@@ -11,7 +11,7 @@ class SimpleGridView extends StatelessWidget {
         children: [
           Expanded(
             child: GridView(
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 03,
                 mainAxisSpacing: 06,
                 crossAxisSpacing: 10,
