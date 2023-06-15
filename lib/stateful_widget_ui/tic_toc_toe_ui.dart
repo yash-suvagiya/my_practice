@@ -12,12 +12,13 @@ class TicTacToeState extends State<TicTacToe> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blue.shade900,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
             player.toString(),
-            style: const TextStyle(fontSize: 30),
+            style: const TextStyle(fontSize: 30, color: Colors.white),
           ),
           GridView.count(
             padding: const EdgeInsets.only(top: 50),
@@ -36,7 +37,12 @@ class TicTacToeState extends State<TicTacToe> {
                       if (TicTacToeLogic.winsnak == 1) {
                         ScaffoldMessenger.of(context).showSnackBar(
                           const SnackBar(
-                            content: Text("O is winner"),
+                            content: Text(
+                              "O is winner",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
                           ),
                         );
                         TicTacToeLogic.winsnak = 0;
@@ -54,7 +60,7 @@ class TicTacToeState extends State<TicTacToe> {
                 child: Container(
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                      color: Colors.grey,
+                      color: Colors.blue.shade800,
                       borderRadius: BorderRadius.circular(20),
                       border: Border.all(
                         width: 3,
@@ -71,6 +77,7 @@ class TicTacToeState extends State<TicTacToe> {
                     value[index],
                     style: const TextStyle(
                       fontSize: 70,
+                      color: Colors.white,
                     ),
                   ),
                 ),
@@ -87,11 +94,11 @@ class TicTacToeState extends State<TicTacToe> {
                 children: [
                   const Text(
                     "PLAYER O",
-                    style: TextStyle(fontSize: 25),
+                    style: TextStyle(fontSize: 25, color: Colors.white),
                   ),
                   Text(
                     TicTacToeLogic.playerO.toString(),
-                    style: const TextStyle(fontSize: 25),
+                    style: const TextStyle(fontSize: 25, color: Colors.white),
                   )
                 ],
               ),
@@ -99,11 +106,11 @@ class TicTacToeState extends State<TicTacToe> {
                 children: [
                   const Text(
                     "PLAYER X",
-                    style: TextStyle(fontSize: 25),
+                    style: TextStyle(fontSize: 25, color: Colors.white),
                   ),
                   Text(
                     TicTacToeLogic.playerX.toString(),
-                    style: const TextStyle(fontSize: 25),
+                    style: const TextStyle(fontSize: 25, color: Colors.white),
                   )
                 ],
               ),
@@ -111,11 +118,17 @@ class TicTacToeState extends State<TicTacToe> {
                 children: const [
                   Text(
                     "DRAW",
-                    style: TextStyle(fontSize: 25),
+                    style: TextStyle(
+                      fontSize: 25,
+                      color: Colors.white,
+                    ),
                   ),
                   Text(
                     "0",
-                    style: TextStyle(fontSize: 25),
+                    style: TextStyle(
+                      fontSize: 25,
+                      color: Colors.white,
+                    ),
                   )
                 ],
               )
