@@ -47,13 +47,6 @@ class TicTacToeState extends State<TicTacToe> {
                         );
                         TicTacToeLogic.winsnak = 0;
                       }
-                      // else {
-                      //   ScaffoldMessenger.of(context).showSnackBar(
-                      //     const SnackBar(
-                      //       content: Text("X is winner"),
-                      //     ),
-                      //   );
-                      // }
                     },
                   );
                 },
@@ -111,26 +104,27 @@ class TicTacToeState extends State<TicTacToe> {
                   Text(
                     TicTacToeLogic.playerX.toString(),
                     style: const TextStyle(fontSize: 25, color: Colors.white),
-                  )
+                  ),
                 ],
               ),
-              Column(
-                children: const [
-                  Text(
-                    "DRAW",
-                    style: TextStyle(
-                      fontSize: 25,
-                      color: Colors.white,
-                    ),
-                  ),
-                  Text(
-                    "0",
-                    style: TextStyle(
-                      fontSize: 25,
-                      color: Colors.white,
-                    ),
-                  )
-                ],
+              GestureDetector(
+                onTap: () {
+                  TicTacToeLogic.reset();
+                  setState(() {});
+                },
+                child: Container(
+                  height: 40,
+                  width: 90,
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                      color: Colors.deepPurple,
+                      borderRadius: BorderRadius.circular(20)),
+                  child: Text("Reset",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 17)),
+                ),
               )
             ],
           ),
