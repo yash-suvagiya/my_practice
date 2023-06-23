@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class RadiButton extends StatefulWidget {
   const RadiButton({super.key});
@@ -19,20 +17,28 @@ class _RadiButtonState extends State<RadiButton> {
       body: Center(
         child: Row(
           children: [
-            Text("Gender"),
+            const Text("Gender"),
             Radio(
               value: male,
               groupValue: gender,
+              // activeColor: Colors.deepPurple,
+              // autofocus: true,
+              // fillColor: ,
+              focusColor: Colors.pink,
               onChanged: (value) {
                 // print(value);
                 gender = value!;
                 setState(() {});
               },
             ),
-            Text('male'),
+            const Text('male'),
             Radio(
               value: female,
               groupValue: gender,
+              // activeColor: Colors.deepPurple,
+              // autofocus: true,
+              // fillColor: ,
+              focusColor: Colors.pink,
               onChanged: (value) {
                 gender = value!;
                 setState(() {});
