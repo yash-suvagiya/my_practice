@@ -16,7 +16,7 @@ class _CheckBoxDemoState extends State<CheckBoxDemo> {
       body: Center(
         child: Row(
           children: [
-            Text('hobby'),
+            const Text('hobby'),
             Checkbox(
               value: isCricket,
               onChanged: (value) {
@@ -25,7 +25,7 @@ class _CheckBoxDemoState extends State<CheckBoxDemo> {
                 setState(() {});
               },
             ),
-            Text('cricket'),
+            const Text('cricket'),
             Checkbox(
               value: isFootboll,
               onChanged: (value) {
@@ -34,7 +34,7 @@ class _CheckBoxDemoState extends State<CheckBoxDemo> {
                 setState(() {});
               },
             ),
-            Text('footbol')
+            const Text('footbol')
           ],
         ),
       ),

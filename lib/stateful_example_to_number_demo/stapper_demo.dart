@@ -26,7 +26,7 @@ class _StepperDemoState extends State<StepperDemo> {
                 setState(() {});
               }
             : null,
-        steps: [
+        steps: const [
           Step(title: Text('step1'), content: Text('This is First step')),
           Step(title: Text('step2'), content: Text('This is Second step')),
           Step(title: Text('step3'), content: Text('This is a Third step')),

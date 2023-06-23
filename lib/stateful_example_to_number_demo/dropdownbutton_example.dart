@@ -16,7 +16,7 @@ class _DropDownBottonPrecticeState extends State<DropDownBottonPrectice> {
     return Scaffold(
       body: Center(
         child: DropdownButton(
-          hint: Text('select your friends'),
+          hint: const Text('select your friends'),
           value: selectedvalue,
           items: List.generate(
             myFriends.length,

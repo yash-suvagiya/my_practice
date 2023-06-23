@@ -13,7 +13,7 @@ class _PageViewDemoState extends State<PageViewDemo> {
     return Scaffold(
       body: PageView(
         scrollDirection: Axis.vertical,
-        children: [
+        children: const [
           Text('yash'),
           Text('harsh'),
           Text('milan'),
