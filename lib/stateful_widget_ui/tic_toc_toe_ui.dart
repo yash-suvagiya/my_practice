@@ -119,7 +119,7 @@ class TicTacToeState extends State<TicTacToe> {
                   decoration: BoxDecoration(
                       color: Colors.deepPurple,
                       borderRadius: BorderRadius.circular(20)),
-                  child: Text("Reset",
+                  child: const Text("Reset",
                       style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,

@@ -79,7 +79,7 @@ class _CheckBoxDisplayState extends State<CheckBoxDisplay> {
         child: Column(
           children: [
             const Text(
-              'please choose your favorite category:-',
+              'please choose your favorite hobbies category:-',
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             const SizedBox(
