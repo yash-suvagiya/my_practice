@@ -4,8 +4,7 @@ List<Map<String, dynamic>> status = [
   {
     'name': 'yash',
     'time': 'yesterday 10:20am',
-    ''
-            'lead':
+    'lead':
         'https://m.media-amazon.com/images/I/61ovSLGM31L._AC_UL600_FMwebp_QL65_.jpg'
   },
   {

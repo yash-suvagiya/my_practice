@@ -1,3 +1,4 @@
+// ignore: unused_import
 import 'package:flutter/material.dart';
 
 List<String> hob = [
@@ -9,6 +10,6 @@ List<String> hob = [
   'painting',
 ];
 
-class Hobbies {
+mixin Hobbies {
   static String? first, second;
 }
