@@ -34,7 +34,9 @@ class _CheckBoxDemoState extends State<CheckBoxDemo> {
                 setState(() {});
               },
             ),
-            const Text('footbol')
+            const Text('footbol'),
+            Text((isCricket) ? 'cricket' : ''),
+            Text((isFootboll) ? 'footboll' : ''),
           ],
         ),
       ),
