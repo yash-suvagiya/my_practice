@@ -37,7 +37,8 @@ class _TextFormFildState extends State<TextFormFild> {
                         return 'please enter data';
                       } else if (value.length >= 20) {
                         return 'your enter charecter is up to 20';
-                      } else if (!RegExp('[a-zA-Z]').hasMatch(value)) {
+                      } else if (!RegExp('[a-zA-Z]').hasMatch(value) &&
+                          !RegExp('[0-9]').hasMatch(value)) {
                         return 'enter alfabet only';
                       } else {
                         return null;
@@ -58,7 +59,8 @@ class _TextFormFildState extends State<TextFormFild> {
                         return 'please enter data';
                       } else if (value.length >= 20) {
                         return 'your enter charecter is up to 20';
-                      } else if (!RegExp('[a-zA-Z]').hasMatch(value)) {
+                      } else if (!RegExp('[a-zA-Z]').hasMatch(value) &&
+                          !RegExp('[0-9]').hasMatch(value)) {
                         return 'enter alfabet only';
                       } else {
                         return null;
@@ -74,6 +76,17 @@ class _TextFormFildState extends State<TextFormFild> {
                   const SizedBox(height: 15),
                   TextFormField(
                     controller: _mobilenumber,
+                    validator: (value) {
+                      if (value!.isEmpty) {
+                        return "Please Enter a Data";
+                      } else if (!RegExp('[0-9]').hasMatch(value)) {
+                        return "Please Enter Numbers Only";
+                      } else if (value.length != 10) {
+                        return "Please Enter 10 Digit Number";
+                      } else {
+                        return null;
+                      }
+                    },
                     decoration: InputDecoration(
                       labelText: 'mobile number',
                       border: OutlineInputBorder(
@@ -84,6 +97,17 @@ class _TextFormFildState extends State<TextFormFild> {
                   const SizedBox(height: 15),
                   TextFormField(
                     controller: _emailid,
+                    validator: (value) {
+                      if (value!.isEmpty) {
+                        return "Please, Input a Email Data";
+                      } else if (!RegExp(
+                              r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
+                          .hasMatch(value)) {
+                        return "Please input data carefully";
+                      } else {
+                        return null;
+                      }
+                    },
                     decoration: InputDecoration(
                       labelText: 'email id',
                       border: OutlineInputBorder(
@@ -94,6 +118,17 @@ class _TextFormFildState extends State<TextFormFild> {
                   const SizedBox(height: 15),
                   TextFormField(
                     controller: _age,
+                    validator: (value) {
+                      if (value!.isEmpty) {
+                        return "Please Enter a Data";
+                      } else if (!RegExp('[0-9]').hasMatch(value)) {
+                        return "Please Enter Numbers Only";
+                      } else if (value.length != 2) {
+                        return "Please Enter Valid Date";
+                      } else {
+                        return null;
+                      }
+                    },
                     decoration: InputDecoration(
                       labelText: 'age',
                       border: OutlineInputBorder(
