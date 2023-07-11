@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 class CheckNumber {
   static String? msg;
   static void number(int number) {
