@@ -32,7 +32,7 @@ class _MyCustomAnimatedDemoState extends State<MyCustomAnimatedDemo>
         mainAxisSize: MainAxisSize.min,
         children: [
           ClockWiseRotation(listenable: _animationController!),
-          SizedBox(
+          const SizedBox(
             height: 50,
           ),
           AntiClockWiseRotation(listenable: _animationController!),

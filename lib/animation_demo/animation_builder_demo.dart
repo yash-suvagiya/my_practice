@@ -13,7 +13,7 @@ class _AminationBuilderDemoState extends State<AminationBuilderDemo>
   void initState() {
     _animationController = AnimationController(
       vsync: this,
-      duration: Duration(seconds: 20),
+      duration: const Duration(seconds: 20),
     )..repeat();
     super.initState();
   }

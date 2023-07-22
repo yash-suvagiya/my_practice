@@ -71,9 +71,9 @@ class _MyAnimatedDemoState extends State<MyAnimatedDemo> {
               height: height,
               width: width,
               color: Colors.purple,
-              curve: Curves.easeIn,
+              curve: Curves.easeInBack,
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             ElevatedButton(
@@ -82,7 +82,7 @@ class _MyAnimatedDemoState extends State<MyAnimatedDemo> {
                 width = random.nextDouble() * 100;
                 setState(() {});
               },
-              child: Text('change value'),
+              child: const Text('change value'),
             ),
           ],
         ),

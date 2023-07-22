@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_practice/animation_demo/my_costomse_ui.dart';
+import 'package:my_practice/simple_dialog/date_and_time_picker_prectice.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,9 +9,12 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: MyCustomAnimatedDemo(),
+    return MaterialApp(
+      home: DateAndTime(),
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        useMaterial3: true,
+      ),
     );
   }
 }
