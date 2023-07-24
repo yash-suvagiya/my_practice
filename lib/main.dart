@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_practice/simple_dialog/date_and_time_picker_prectice.dart';
+import 'package:my_practice/simple_dialog/dialogbox_prectice.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: DateAndTime(),
+      home: DialogPrectice(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,

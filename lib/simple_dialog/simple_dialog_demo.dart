@@ -34,9 +34,9 @@ class _SimpleDialogDemoState extends State<SimpleDialogDemo> {
                       shape: BeveledRectangleBorder(),
                       surfaceTintColor: Colors.red,
                       children: [
-                        Text('mintan'),
-                        Text('lathiya'),
-                        Text('kanjibhai'),
+                        Text('yash'),
+                        Text('suvagiya'),
+                        Text('j'),
                       ],
                     );
                   },
@@ -130,8 +130,8 @@ class _SimpleDialogDemoState extends State<SimpleDialogDemo> {
                   applicationName: "myApp",
                   applicationVersion: '3.5.55',
                   routeSettings: const RouteSettings(
-                      name: 'mintan', arguments: Icon(Icons.call)),
-                  applicationLegalese: 'mintan lathiya',
+                      name: 'yash', arguments: Icon(Icons.call)),
+                  applicationLegalese: 'yash suvagiya',
                   anchorPoint: const Offset(0, 1.5),
                   useRootNavigator: false,
                 );
