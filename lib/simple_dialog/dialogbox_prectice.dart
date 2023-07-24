@@ -49,42 +49,48 @@ class _DialogPrecticeState extends State<DialogPrectice> {
                 child: ListView.builder(
                   itemCount: data.length,
                   itemBuilder: (context, index) {
-                    return ListTile(
-                      onTap: () {
-                        txtupdate.text = data[selectedIndex]['name'];
-                        showDialog(
-                          context: context,
-                          builder: (context) => SimpleDialog(
-                            title: const Text('aleart'),
-                            children: [
-                              TextFormField(
-                                controller: txtupdate,
-                              ),
-                              Row(
-                                children: [
-                                  MaterialButton(
-                                    onPressed: () {
-                                      data[selectedIndex]['name'] =
-                                          txtupdate.text;
-                                      Navigator.pop(context);
-                                      setState(() {});
-                                    },
-                                    child: const Text('Update'),
-                                  ),
-                                  MaterialButton(
-                                    onPressed: () {
-                                      Navigator.pop(context);
-                                      setState(() {});
-                                    },
-                                    child: const Text('cancel'),
-                                  ),
-                                ],
-                              )
-                            ],
-                          ),
-                        );
+                    return Dismissible(
+                      key: UniqueKey(),
+                      onDismissed: (direction) {
+                        data.removeAt(index);
                       },
-                      title: Text(data[selectedIndex]['name']),
+                      child: ListTile(
+                        onTap: () {
+                          txtupdate.text = data[selectedIndex]['name'];
+                          showDialog(
+                            context: context,
+                            builder: (context) => SimpleDialog(
+                              title: const Text('aleart'),
+                              children: [
+                                TextFormField(
+                                  controller: txtupdate,
+                                ),
+                                Row(
+                                  children: [
+                                    MaterialButton(
+                                      onPressed: () {
+                                        data[selectedIndex]['name'] =
+                                            txtupdate.text;
+                                        Navigator.pop(context);
+                                        setState(() {});
+                                      },
+                                      child: const Text('Update'),
+                                    ),
+                                    MaterialButton(
+                                      onPressed: () {
+                                        Navigator.pop(context);
+                                        setState(() {});
+                                      },
+                                      child: const Text('cancel'),
+                                    ),
+                                  ],
+                                )
+                              ],
+                            ),
+                          );
+                        },
+                        title: Text(data[selectedIndex]['name']),
+                      ),
                     );
                   },
                 ),
