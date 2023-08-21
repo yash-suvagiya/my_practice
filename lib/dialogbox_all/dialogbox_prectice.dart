@@ -52,7 +52,35 @@ class _DialogPrecticeState extends State<DialogPrectice> {
                     return Dismissible(
                       key: UniqueKey(),
                       onDismissed: (direction) {
-                        data.removeAt(index);
+                        setState(() {});
+                        // data.removeAt(index);
+                        showDialog(
+                          context: context,
+                          builder: (context) => SimpleDialog(
+                            title: Text('are you sure delete'),
+                            children: [
+                              Row(
+                                children: [
+                                  MaterialButton(
+                                    onPressed: () {
+                                      Navigator.pop(context);
+                                      setState(() {});
+                                    },
+                                    child: Text('cancel'),
+                                  ),
+                                  MaterialButton(
+                                    onPressed: () {
+                                      Navigator.pop(context);
+                                      data.removeAt(index);
+                                      setState(() {});
+                                    },
+                                    child: const Text('delete'),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        );
                       },
                       child: ListTile(
                         onTap: () {
