@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_practice/data_passing_example/data_passign1.dart';
 import 'package:my_practice/dialogbox_all/dialogbox_prectice.dart';
 import 'package:my_practice/navigation_example/first_screen.dart';
 import 'package:my_practice/navigation_example/second_screen.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         '/SecondScreen': (context) => SecondScreen(),
         '/ThirdScreen': (context) => ThirdScreen(),
       },
-      home: FirstScreen(),
+      home: DataPassing1(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
